@@ -1,0 +1,18 @@
+body {
+  background: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 0px;
+}
+
+#numberContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
