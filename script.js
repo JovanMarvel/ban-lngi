@@ -24,7 +24,7 @@ function ban1(n){
 }
 
 function ban2(n){
-  if (n < 1) return ban1(10 ** n ** 1.229);
+  if (n < 1) return ban1(10 ** (n ** 1.229));
   else {
     let i = 10 ** (n % 1) ** 1.229;
     return (n < 2 ? "{10, 10, " : "{10, ").repeat(Math.floor(i)) + ban2((i % 1) * (n % 1 == 0 ? n - 1 : Math.floor(n))) + (n < 2 ? "}" : ", " + Math.floor(n - 1) + ", 2}").repeat(Math.floor(i));
